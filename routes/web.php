@@ -39,6 +39,7 @@ Route::post('venta', [VentaController::class, 'store'])->name('venta.store');
 Route::get('venta/{venta}/edit', [VentaController::class, 'edit'])->name('venta.edit');
 Route::put('venta/{venta}', [VentaController::class, 'update'])->name('venta.update');
 Route::delete('venta/{venta}', [VentaController::class, 'destroy'])->name('venta.destroy');
+Route::get('venta/{venta}', [VentaController::class, 'show'])->name('venta.show');
 Route::get('categoria', [CategoriaController::class, 'index'])->name('categoria.index');
 
 Route::get('categoria/create', [CategoriaController::class, 'create'])->name('categoria.create');

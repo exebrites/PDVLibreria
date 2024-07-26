@@ -49,6 +49,8 @@
                             <td>{{ $venta->id }}</td>
                             <td>{{ $venta->montoTotal }}</td>
                             <td>{{ $venta->created_at->format('d-m-Y') }}</td>
+                            <td width="10px"><a class="btn btn-primary btn btn-sm btn-fixed-width"
+                                href="{{ route('venta.show', $venta->id) }}">Ver</a></td>
                             <td width="10px"><a class="btn btn-warning btn btn-sm btn-fixed-width"
                                     href="{{ route('venta.edit', $venta->id) }}">Modificar</a></td>
                             <td width="20px">

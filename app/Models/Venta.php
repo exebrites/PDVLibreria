@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\DetalleVenta;
 class Venta extends Model
 {
 
@@ -14,6 +14,6 @@ class Venta extends Model
     
     public function detalles()
     {
-        return $this->hasMany(DetalleVenta::class,'idVenta','');
+        return $this->hasMany(DetalleVenta::class, 'idVenta');
     }
 }

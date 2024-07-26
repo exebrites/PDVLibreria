@@ -320,14 +320,14 @@ return [
         [
             'text' => 'Inicio',
             'route' => 'inicio',
-            'icon' => 'fas fa-fw fa-house',
+            'icon' => 'fas fa-home',
         ],
         [
             'text' => 'Ventas',
             'route' => 'venta.index',
-            // 'icon' => 'fas fa-fw fa-user',
-            'icon' => 'fa-solid fa-house'
-            // 'icon' => 'fa-solid fa-lock',
+            'icon' => 'fas fa-shopping-cart',
+            // 'icon' => 'fa-solid fa-house'
+
         ],
 
         // [
@@ -337,15 +337,18 @@ return [
         // ],
         [
             'text' => 'Inventario',
-            // 'icon' => 'fas fa-fw fa-share',
+            'icon' => 'fas fa-box-open',
             'submenu' => [
                 [
                     'text' => 'Productos',
                     'route' => 'producto.index',
+                    'icon' => 'fas fa-cube ',
+
                 ],
                 [
                     'text' => 'Categorias',
                     'route' => 'categoria.index',
+                    'icon' => '  fas fa-th-large ',
                 ],
 
 
@@ -355,7 +358,7 @@ return [
             'text' => 'Proveedor',
             'route' => 'proveedor.index',
             // 'icon' => 'fas fa-fw fa-user',
-            'icon' => 'fa-solid fa-house'
+            'icon' => 'fas fa-truck'
             // 'icon' => 'fa-solid fa-lock',
         ],
         // ['header' => 'labels'],
